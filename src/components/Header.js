@@ -1,8 +1,27 @@
+import Image from "next/image"
 function Header() {
     return (
-        <div>
-          <h1>I am a header</h1>
-        </div>
+        <header>
+          {/* Top nav */}
+          <div>
+              <div> 
+                  <Image
+                  src='https://links.papareact.com/f90'
+                  width={150}
+                  height={40}
+                  
+                  />
+              </div>
+
+          </div>
+
+          {/* Bottom nav */}
+
+          <div>
+
+
+          </div>
+        </header>
     )
 }
 
