@@ -4,7 +4,7 @@ function Header() {
         <header>
           {/* Top nav */}
           <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
-              <div> 
+              <div className="mt-2 flex items-center flex-grow"> 
                   <Image
                   src='https://links.papareact.com/f90'
                   width={150}
