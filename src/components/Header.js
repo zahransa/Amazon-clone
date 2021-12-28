@@ -1,4 +1,10 @@
 import Image from "next/image"
+import {
+    MenuIcon,
+    ScrachIcon,
+    ShippingCartIcon,
+  } from "@heroicons/react/outline";
+
 function Header() {
     return (
         <header>
