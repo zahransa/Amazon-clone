@@ -3,7 +3,7 @@ import {
     MenuIcon,
     ScrachIcon,
     SearchIcon,
-    ShippingCartIcon,
+    ShoppingCartIcon,
   } from "@heroicons/react/outline";
 
 function Header() {
@@ -23,10 +23,31 @@ function Header() {
               {/* Search */}
 
               <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hover:bg-yellow-500">
-                  <input className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none" type="text" />
+                  <input className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4" type="text" />
                   <SearchIcon className='h-12 p-4'/>
 
 
+              </div>
+
+              {/* Right */}
+              <div className="text-white flex item-center text-xs space-x-6 mx-6 whitespace-nowrap">
+
+                  <div>
+                      <p>Hello Saeed Zahran</p>
+                      <p>Account & lists</p>
+                  </div>
+
+                  <div>
+                     <p>Returns</p>
+                     <p>& orders</p>
+                  </div>
+
+                  <div>
+                  <ShoppingCartIcon className="h-10 " />
+                  <p>Basket</p>
+                  </div>
+
+                  
               </div>
 
 
