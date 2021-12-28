@@ -21,7 +21,7 @@ function Header() {
                   />
               </div>
               {/* Search */}
-              <div className="bg-yellow-400 hover:bg-yellow-500">
+              <div className="hidden sm:flex bg-yellow-400 hover:bg-yellow-500">
                   <input type="text" />
                   <SearchIcon className='h-12 p-4'/>
 
