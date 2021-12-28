@@ -2,6 +2,7 @@ import Image from "next/image"
 import {
     MenuIcon,
     ScrachIcon,
+    SearchIcon,
     ShippingCartIcon,
   } from "@heroicons/react/outline";
 
@@ -22,6 +23,7 @@ function Header() {
               {/* Search */}
               <div>
                   <input type="text" />
+                  <SearchIcon className='h-12 p-4'/>
 
 
               </div>
