@@ -1,3 +1,5 @@
+import {carousel} from "react-responsive-carousel";
+
 function Banner() {
     return (
         <div>
@@ -6,4 +8,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Banner;
