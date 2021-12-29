@@ -2,7 +2,8 @@ import {carousel} from "react-responsive-carousel";
 
 function Banner() {
     return (
-        <div>
+        <div className='relative'>
+            
             
         </div>
     )
