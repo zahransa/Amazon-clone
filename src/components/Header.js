@@ -44,7 +44,7 @@ function Header() {
 
                   <div className="relative link flex items-center">
                      <ShoppingCartIcon className="h-10 " />
-                     <p className="font-extrabold md:text-sm">Basket</p>
+                     <p className="hidden md:inline font-extrabold md:text-sm">Basket</p>
                   </div>
 
                   
