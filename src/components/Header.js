@@ -32,17 +32,17 @@ function Header() {
               {/* Right */}
               <div className="text-white flex item-center text-xs space-x-6 mx-6 whitespace-nowrap">
 
-                  <div className="cursor-pointer">
+                  <div className="link">
                       <p>Hello Saeed Zahran</p>
                       <p>Account & lists</p>
                   </div>
 
-                  <div className="cursor-pointer">
+                  <div className="linkr">
                      <p>Returns</p>
                      <p>& orders</p>
                   </div>
 
-                  <div className="cursor-pointer">
+                  <div className="link">
                   <ShoppingCartIcon className="h-10 " />
                   <p>Basket</p>
                   </div>
