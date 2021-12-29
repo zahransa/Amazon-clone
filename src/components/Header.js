@@ -58,12 +58,15 @@ function Header() {
 
           {/* Bottom nav */}
 
+
+
           <div>
-
-
+              <p>
+                <MenuIcon className="h-6 mr-1" />
+                All </p>
           </div>
         </header>
-    )
+    );
 }
 
 export default Header
