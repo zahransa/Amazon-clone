@@ -34,17 +34,17 @@ function Header() {
 
                   <div className="link">
                       <p>Hello Saeed Zahran</p>
-                      <p>Account & lists</p>
-                  </div>
-
-                  <div className="linkr">
-                     <p>Returns</p>
-                     <p>& orders</p>
+                      <p className='font-extrabold md-sm'>Account & lists</p>
                   </div>
 
                   <div className="link">
-                  <ShoppingCartIcon className="h-10 " />
-                  <p>Basket</p>
+                     <p>Returns</p>
+                     <p className='font-extrabold md-sm'>& orders</p>
+                  </div>
+
+                  <div className="link">
+                     <ShoppingCartIcon className="h-10 " />
+                     <p className='font-extrabold md-sm'>Basket</p>
                   </div>
 
                   
