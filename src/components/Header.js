@@ -42,7 +42,7 @@ function Header() {
                      <p className="font-extrabold md:text-sm">& orders</p>
                   </div>
 
-                  <div className="relative link">
+                  <div className="relative link flex">
                      <ShoppingCartIcon className="h-10 " />
                      <p className="font-extrabold md:text-sm">Basket</p>
                   </div>
