@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Banner() {
   return (
     <div className='relative'>
+        <div />
       <Carousel
         autoPlay
         infiniteLoop
