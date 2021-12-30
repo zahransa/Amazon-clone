@@ -15,7 +15,7 @@ export default function Home() {
       <main className='max-w-screen-2xl mx-auto'>
         <Banner />
 
-        < ProductFeed />
+        <ProductFeed />
 
 
       </main>
@@ -26,5 +26,7 @@ export default function Home() {
 }
 
 export async function getServerSideProps(context){
-  
+  const products= await fetch()
+
 }
+// GET >>>  https://fakestoreapi.com/products
