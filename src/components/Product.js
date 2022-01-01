@@ -33,8 +33,9 @@ function Product({ id, title, price, description, category, image }) {
       <p>{description}</p>
 
       <div>
+        <Currency quantity={price} currency='GBP'/>
 
-          
+
       </div>
 
     
