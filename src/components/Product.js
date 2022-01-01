@@ -39,6 +39,14 @@ function Product({ id, title, price, description, category, image }) {
 
       </div>
 
+      {hasPrime && (
+          <div>
+              <img src="https://links.papareact.com/fdw" alt="" />
+          </div>
+
+
+      )}
+
     
 
     </div>
