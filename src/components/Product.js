@@ -30,7 +30,14 @@ function Product({ id, title, price, description, category, image }) {
          ))}
       </div>  
 
-      {hasPrime && <p>Has prime del</p>}
+      <p>{description}</p>
+
+      <div>
+
+          
+      </div>
+
+    
 
     </div>
 
