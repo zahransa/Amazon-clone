@@ -6,17 +6,25 @@ import {
     ShoppingCartIcon,
   } from "@heroicons/react/outline";
 
+ 
+  import { signIn, signOut, useSession } from "next-auth/react"
+  import { useRouter } from "next/router"
+
 function Header() {
+  
+const router = useRouter();
     return (
         <header>
           {/* Top nav */}
           <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
               <div className="mt-2 flex items-center flex-grow sm:flex-grow-0"> 
                   <Image
+                  onClick={() => router.push('/')}
                   src='https://links.papareact.com/f90'
                   width={150}
                   height={40}
                   objectFit="contain"
+                  className="cursor-pointer"
                   
                   />
               </div>
@@ -32,7 +40,7 @@ function Header() {
               {/* Right */}
               <div className="text-white flex item-center text-xs space-x-6 mx-6 whitespace-nowrap">
 
-                  <div className="link">
+                  <div onClick={signIn} className="cursor-pointer link">
                       <p>Hello Saeed Zahran</p>
                       <p className="font-extrabold md:text-sm">Account & lists</p>
                   </div>
