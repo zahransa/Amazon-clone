@@ -26,6 +26,8 @@ function Product({ id, title, price, description, category, image }) {
       description,
       category,
       image,
+      rating,
+      hasPrime,
 
     };
 
