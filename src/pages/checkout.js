@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Image from "next/image";
 import { selectItems } from "../slices/basketSlice";
 import { useSelector } from "react-redux"
+import Currency from "react-currency-formatter"
 function Checkout() {
     const items = useSelector(selectItems); 
 
@@ -51,6 +52,24 @@ function Checkout() {
 
         {/* Right section*/}
         <div>
+            {items.length > 0 && (
+                <>
+                <h2 className='whitespace-nowrap'>
+                    Subtotal
+                    ({items.length} items):
+                    <span className="font-bold">
+                        <Currency quantity={total} currency="GBP" />
+                    </span>
+                </h2>
+                {/* button for session*/}
+
+                
+                
+                
+                </>
+
+
+            ) }
 
         </div>
 
