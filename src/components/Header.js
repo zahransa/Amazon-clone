@@ -11,10 +11,14 @@ import {
   import { useRouter } from "next/router"
   import { selectItems } from "../slices/basketSlice";
   import { useSelector } from "react-redux"
+import { data } from "autoprefixer";
 
 function Header() {
     const items = useSelector(selectItems)
     const router = useRouter();
+    const { data: session } = useSession();
+
+    
     return (
         <header>
           {/* Top nav */}
@@ -42,8 +46,11 @@ function Header() {
               {/* Right */}
               <div className="text-white flex item-center text-xs space-x-6 mx-6 whitespace-nowrap">
 
-                  <div onClick={signIn} className="cursor-pointer link">
-                      <p>Hello Saeed Zahran</p>
+                  <div onClick={!session ? signIn : signOut} className="cursor-pointer link">
+                      <p className="hover:underline"> 
+                        {session? `Hello, ${session.user.name}`: "Sign In"}
+
+                      </p>
                       <p className="font-extrabold md:text-sm">Account & lists</p>
                   </div>
 
