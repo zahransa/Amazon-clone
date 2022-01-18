@@ -4,9 +4,15 @@ import Image from "next/image";
 import { selectItems, selectToltal } from "../slices/basketSlice";
 import { useSelector } from "react-redux"
 import Currency from "react-currency-formatter"
+import { signIn, signOut, useSession } from "next-auth/react"
+import { loadStripe } from "@stripe/stripe-js";
+const stripePromise = loadStripe(process.env.stripe_public_key)
+
+
 function Checkout() {
     const items = useSelector(selectItems); 
     const total = useSelector(selectToltal)
+    const { data: session } = useSession();
 
 
   return (
@@ -63,6 +69,15 @@ function Checkout() {
                     </span>
                 </h2>
                 {/* button for session*/}
+                <button
+                  
+                  disabled={!session}
+                
+                  className={`button mt-2 ${
+                    !session && 
+                    "from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"}`}>
+                  {!session ? 'Sign in to checkout' : 'Proceed to checkout'}
+                </button>
                 
                 
                 
